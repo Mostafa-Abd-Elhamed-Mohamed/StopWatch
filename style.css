@@ -1,0 +1,99 @@
+ body {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+ }
+
+ .stopwatch-container {
+     text-align: center;
+     background-color: rgba(255, 255, 255, 0.9);
+     padding: 40px 30px;
+     border-radius: 15px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+     width: 650px;
+     backdrop-filter: blur(5px);
+ }
+
+ h1 {
+     color: #333;
+     margin-bottom: 30px;
+     font-size: 2.2rem;
+     font-weight: 600;
+     letter-spacing: 1px;
+ }
+
+ .time-display {
+     font-size: 2.8rem;
+     font-family: 'Courier New', monospace;
+     margin-bottom: 40px;
+     color: #444;
+     display: flex;
+     justify-content: center;
+     gap: 5px;
+ }
+
+ .time-unit {
+     background-color: #f8f9fa;
+     padding: 10px 15px;
+     border-radius: 8px;
+     box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+     min-width: 90px;
+ }
+
+ .buttons {
+     display: flex;
+     justify-content: center;
+     gap: 25px;
+ }
+
+ button {
+     padding: 12px 30px;
+     font-size: 1.1rem;
+     border: none;
+     border-radius: 50px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     font-weight: 600;
+     letter-spacing: 0.5px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ #startStop {
+     background-color: #28a745;
+     color: white;
+ }
+
+ #startStop:hover {
+     background-color: #218838;
+     transform: translateY(-2px);
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+ }
+
+ #reset {
+     background-color: #6c757d;
+     color: white;
+ }
+
+ #reset:hover {
+     background-color: #5a6268;
+     transform: translateY(-2px);
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+ }
+
+ #startStop.running {
+     background-color: #dc3545;
+ }
+
+ #startStop.running:hover {
+     background-color: #c82333;
+ }
+
+ .time-separator {
+     display: flex;
+     align-items: center;
+     color: #666;
+ }
